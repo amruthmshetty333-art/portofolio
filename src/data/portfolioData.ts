@@ -277,11 +277,6 @@ export const portfolioData: PortfolioData = {
       name: "C Programming",
       issuer: "Spoken Tutorial, IIT Bombay",
       iconType: "code"
-    },
-    {
-      name: "Introduction to Data Science",
-      issuer: "Commonwealth Bank (Forage)",
-      iconType: "data"
     }
   ]
 };
