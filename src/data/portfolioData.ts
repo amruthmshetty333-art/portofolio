@@ -58,7 +58,7 @@ export const portfolioData: PortfolioData = {
     email: "amruthmshetty333@gmail.com",
     phone: "+91 8921966142",
     location: "Mangaluru, Karnataka, India",
-    github: "https://github.com/amruth-shetty",
+    github: "https://github.com/amruthmshetty333-art",
     linkedin: "https://linkedin.com/in/amruth-shetty",
     summary: "A driven Computer Science Engineering student specializing in Data Science, AI, and Machine Learning, with a strong foundation in Full Stack Development, Backend Development, and Frontend Development. Proficient in Python, Django, and Java, with hands-on experience applying Software Engineering methodologies to build secure, scalable web and mobile systems. A proactive problem solving enthusiast dedicated to continuous learning and creating efficient software development solutions."
   },
