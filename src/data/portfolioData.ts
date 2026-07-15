@@ -79,6 +79,8 @@ export const portfolioData: PortfolioData = {
       category: "Frameworks",
       skills: [
         { name: "Django", icon: "SiDjango" },
+        { name: "Django REST Framework", icon: "SiDjango" },
+        { name: "AJAX", icon: "SiJavascript" },
         { name: "REST APIs", icon: "SiPostman" },
         { name: "Bootstrap 5", icon: "SiBootstrap" },
         { name: "Firebase SDK", icon: "SiFirebase" }
@@ -88,6 +90,7 @@ export const portfolioData: PortfolioData = {
       category: "Databases",
       skills: [
         { name: "SQLite", icon: "SiSqlite" },
+        { name: "PostgreSQL", icon: "SiPostgresql" },
         { name: "Firebase Realtime DB", icon: "SiFirebase" },
         { name: "Database Design", icon: "FaDatabase" }
       ]
@@ -110,6 +113,7 @@ export const portfolioData: PortfolioData = {
         { name: "Git", icon: "SiGit" },
         { name: "GitHub", icon: "SiGithub" },
         { name: "VS Code", icon: "SiVisualstudiocode" },
+        { name: "Render", icon: "SiRender" },
         { name: "Android Studio", icon: "SiAndroidstudio" },
         { name: "Android Development", icon: "SiAndroid" },
         { name: "Responsive Web Design", icon: "FaLaptopCode" },
@@ -136,16 +140,16 @@ export const portfolioData: PortfolioData = {
       subtitle: "Full Stack E-Commerce Web Application",
       date: "2026",
       featured: true,
-      technologies: ["Django", "SQLite", "Python", "Bootstrap 5", "HTML", "CSS", "JavaScript", "ReportLab", "Pillow", "REST APIs"],
+      technologies: ["Django", "SQLite", "Python", "Bootstrap 5", "HTML5", "CSS3", "JavaScript", "ReportLab", "Pillow", "REST APIs", "Render"],
       description: [
-        "Engineered a modular, Full Stack Development architecture using Django and Python, developing a responsive frontend layout utilizing Responsive Web Design with Bootstrap and CSS.",
+        "Engineered a modular, Full Stack architecture using Django and Python, developing a responsive frontend layout utilizing Bootstrap and custom CSS.",
         "Designed a normalized SQLite relational database schema utilizing advanced Database Design principles to enforce integrity constraints (Category, Product, Cart, Wishlist, Order, Review).",
-        "Secured user data by implementing custom Authentication pipelines, secure password hashing, CSRF token validation, and session-based cart management.",
+        "Secured user data by implementing custom authentication pipelines, secure password hashing, CSRF token validation, and session-based cart management.",
         "Optimized transactional operations using Django's atomic transactions (transaction.atomic) and row-level locking (select_for_update) to handle concurrent checkouts and eliminate race conditions.",
         "Developed an automated invoice generator using ReportLab to dynamically produce vector-based PDF receipts detailing taxes, shipping, and item details upon checkout.",
         "Created an interactive order tracking engine enabling customers to retrieve real-time fulfillment status via unique order ID and billing email matching."
       ],
-      githubUrl: "https://github.com/amruth-shetty/bluecart",
+      githubUrl: "https://github.com/amruthmshetty333-art/blucart",
       liveUrl: "#",
       architecture: {
         overview: "A monolithic architecture utilizing Django's Model-View-Template (MVT) pattern, with SQLite as the relational storage engine, secured via middleware validation and transactional database-level locking.",
@@ -175,6 +179,54 @@ export const portfolioData: PortfolioData = {
             name: "PDF Invoice Generation",
             details: [
               "On-the-fly vector-based receipt creation with ReportLab, calculating tax and shipping items dynamically."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Funsta",
+      subtitle: "Full Stack Social Media Platform",
+      date: "2026",
+      featured: true,
+      technologies: ["Django", "PostgreSQL", "SQLite", "Python", "Bootstrap 5", "HTML5", "CSS3", "JavaScript", "AJAX", "REST APIs", "Render"],
+      description: [
+        "Engineered a production-ready social media platform with multi-image carousel posts, custom caption hashtag/mention parsing, and infinite scrolling feeds.",
+        "Built asynchronous zero-reload features (like toggles, comment nesting, and live unread notifications) using JavaScript and AJAX Fetch requests.",
+        "Designed an ER-mapped relational database schema for complex social interactions including followers/following, post/comment likes, and nested multi-threaded comments.",
+        "Configured automated deployment workflows on Render with white-noise static compression and automated migration runs integrated with PostgreSQL."
+      ],
+      githubUrl: "https://github.com/amruthmshetty333-art/funsta",
+      liveUrl: "#",
+      architecture: {
+        overview: "A clean monolithic Django application built with PostgreSQL/SQLite, featuring zero-page-reload AJAX updates on the frontend, standard session authentication, custom template tags, and Render-optimized deployment configurations.",
+        modules: [
+          {
+            name: "Social Networking Engine",
+            details: [
+              "Follower-following user relationship structures supporting personalized feeds.",
+              "Multi-threaded nested commenting systems and saved posts functionality."
+            ]
+          },
+          {
+            name: "Asynchronous Interaction Flow",
+            details: [
+              "AJAX-driven zero-reload like toggles and comments with immediate UI rendering.",
+              "Real-time unread notification triggers for user likes, comments, and follows."
+            ]
+          },
+          {
+            name: "Content Feed & Analytics",
+            details: [
+              "Curated main feed alongside explore grid and trending metrics based on engagement.",
+              "Operator analytics dashboard tracking total posts, followers, and interaction metrics."
+            ]
+          },
+          {
+            name: "Database & Deployments",
+            details: [
+              "Fully normalized PostgreSQL/SQLite relational schema mapping database integrity.",
+              "Integrated Gunicorn/Whitenoise for compressed assets and automated builds on Render cloud."
             ]
           }
         ]

@@ -12,7 +12,8 @@ import {
   SiHtml5, SiCss, SiDjango, SiPostman, SiBootstrap, 
   SiFirebase, SiNumpy, SiPandas, 
   SiScikitlearn, SiGit, SiGithub, 
-  SiAndroidstudio, SiAndroid, SiJupyter, SiGooglecolab 
+  SiAndroidstudio, SiAndroid, SiJupyter, SiGooglecolab,
+  SiPostgresql, SiRender
 } from 'react-icons/si';
 
 // Helper to resolve icon components dynamically
@@ -23,6 +24,7 @@ const getIconComponent = (iconName: string) => {
     case 'SiCplusplus': return <SiCplusplus className="w-6 h-6 text-[#00599C]" />;
     case 'SiJavascript': return <SiJavascript className="w-6 h-6 text-[#F7DF1E]" />;
     case 'SiSqlite': return <SiSqlite className="w-6 h-6 text-[#003B57]" />;
+    case 'SiPostgresql': return <SiPostgresql className="w-6 h-6 text-[#4169E1]" />;
     case 'SiHtml5': return <SiHtml5 className="w-6 h-6 text-[#E34F26]" />;
     case 'SiCss3': return <SiCss className="w-6 h-6 text-[#1572B6]" />;
     case 'SiDjango': return <SiDjango className="w-6 h-6 text-[#092E20]" />;
@@ -36,6 +38,7 @@ const getIconComponent = (iconName: string) => {
     case 'SiScikitlearn': return <SiScikitlearn className="w-6 h-6 text-[#F7931E]" />;
     case 'SiGit': return <SiGit className="w-6 h-6 text-[#F05032]" />;
     case 'SiGithub': return <SiGithub className="w-6 h-6 text-white" />;
+    case 'SiRender': return <SiRender className="w-6 h-6 text-[#46E3B7]" />;
     case 'SiVisualstudiocode': return <FaLaptopCode className="w-6 h-6 text-[#007ACC]" />;
     case 'SiAndroidstudio': return <SiAndroidstudio className="w-6 h-6 text-[#3DDC84]" />;
     case 'SiAndroid': return <SiAndroid className="w-6 h-6 text-[#3DDC84]" />;
