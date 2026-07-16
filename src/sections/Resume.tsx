@@ -89,7 +89,7 @@ export const Resume: React.FC = () => {
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 pt-2">
               <a
-                href="./resume.pdf"
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
                 download
                 className="px-6 py-3 rounded-lg font-semibold bg-primary hover:bg-primary/95 text-white flex items-center gap-2 group transition-all duration-300 shadow-lg shadow-primary/20 text-sm"
               >
@@ -98,7 +98,7 @@ export const Resume: React.FC = () => {
               </a>
 
               <a
-                href="./resume.pdf"
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-lg font-semibold bg-white/10 hover:bg-white/15 text-white flex items-center gap-2 border border-white/10 text-sm transition-all duration-300"

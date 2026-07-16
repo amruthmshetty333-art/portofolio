@@ -7,5 +7,5 @@ export default defineConfig({
   // Use relative paths in production to ensure the site loads correctly on both:
   // - https://<username>.github.io/
   // - https://<username>.github.io/<repo-name>/
-  base: './',
+  base: '/portofolio/',
 });
